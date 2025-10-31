@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon2.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- خط عربي -->
+    <!-- Arabic Fonts-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://artype.fun/">
 
-    <!-- (اختياري) لتحسين الظهور على تويتر -->
+    <!-- For better preview in X (Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="لعبة الكتابة بالعربية – Arabic Typing Game">
     <meta name="twitter:description" content="اختبر سرعتك في الكتابة بالعربية بطريقة ممتعة.">
@@ -34,89 +34,25 @@
       html, body {
         margin: 0;
         padding: 0;
-        background-color: #0b1023; /* نفس خلفية اللعبة */
-      }
-    </style>
-    <style>
-      :root {
-        --footer-h: 72px; /* ارتفاع الفوتر */
-      }
-
-      html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background: #0b1023;
-        overflow-x: hidden;
-      }
-
-      /* اللعبة (React) */
-      #root {
-        min-height: 100vh;
-        padding-bottom: var(--footer-h); /* سيب مساحة للفوتر */
-        background: #0b1023;
-      }
-
-      /* الفوتر الثابت */
-      footer.fixed-footer {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: var(--footer-h);
         background-color: #0b1023;
-        border-top: 1px solid #1b2238;
-        text-align: center;
-        padding: 12px 10px;
-        direction: rtl;
-        font-family: 'Cairo', sans-serif;
-        font-size: 15px;
-        color: #9fb3c8;
-        z-index: 1000; /* فوق أي عناصر تانية */
-      }
-
-      footer.fixed-footer a {
-        color: #58a6ff; text-decoration: none; margin: 0 8px;
-      }
-
-      footer.fixed-footer .sep { color: #4a5568; }
-
-      /* عدل مساحات الإعلانات عشان ما تتغطاش بالفوتر */
-      .ad-placeholder {
-        position: fixed;
-        top: 100px;
-        width: 120px;
-        height: calc(100vh - 100px - var(--footer-h) - 16px); /* الطول يتفادى الفوتر */
-        background: repeating-linear-gradient(45deg,#1b2238,#1b2238 10px,#0b1023 10px,#0b1023 20px);
-        color: #58a6ff;
-        font-family: 'Cairo', sans-serif;
-        font-size: 14px;
-        display: flex; align-items: center; justify-content: center;
-        border: 1px solid #1b2238; border-radius: 6px;
-        opacity: 0.7;
-        z-index: 50;
-      }
-      #ad-right { right: 10px; }
-      #ad-left  { left: 10px; }
-
-      @media (max-width: 1000px) {
-        .ad-placeholder { display: none; }
       }
     </style>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4481314045019480"
+     crossorigin="anonymous"></script>
 
   </head>
   <body>   
     <div id="root"></div>
     
-    <!-- مساحتان إعلانيتان يمين وشمال -->
+    <!-- For Ads-->
     <div id="ad-right" class="ad-placeholder">مساحة إعلانية</div>
     <div id="ad-left" class="ad-placeholder">مساحة إعلانية</div>
 
     <style>
-      /* أماكن الإعلانات */
       .ad-placeholder {
         position: fixed;
-        top: 100px; /* يبدأ تحت شريط اللعبة */
+        top: 100px;
         width: 160px;
         height: 600px;
         background: repeating-linear-gradient(
@@ -146,7 +82,6 @@
         left: 10px;
       }
 
-      /* إخفاء المساحات على الشاشات الصغيرة (الموبايل) */
       @media (max-width: 1000px) {
         .ad-placeholder {
           display: none;
@@ -154,22 +89,29 @@
       }
     </style>
 
-    <footer class="fixed-footer">
-      <a href="about.html">عن اللعبة</a>
-      <span class="sep">|</span>
-      <a href="privacy.html">سياسة الخصوصية</a>
-      <span class="sep">|</span>
-      <a href="contact.html">تواصل معنا</a>
-      <span class="sep">|</span>
-      <a href="terms.html">شروط الاستخدام</a>
-      <div style="margin-top:6px; font-size:13px; color:#6b7280;">
-        © <span id="year"></span> جميع الحقوق محفوظة – لعبة الكتابة بالعربية
-      </div>
-    </footer>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <style>
+      body {margin:0;background:#0b1023;color:#d1d5db;font-family:'Cairo',sans-serif;line-height:1.8}
+      main.container{max-width:900px;margin:0 auto;padding:32px 16px}
+      h1{color:#58a6ff;text-align:center}
+      .ar{direction:rtl;text-align:right}
+      .en{direction:ltr;text-align:left}
+      hr{margin:36px 0;border:none;border-top:1px solid #1b2238}
+      footer{border-top:1px solid #1b2238;background:#0b1023;text-align:center;padding:12px 10px;color:#9fb3c8}
+      footer a{color:#58a6ff;text-decoration:none;margin:0 8px}
+      .sep{color:#4a5568}
+    </style>
 
+    <footer>
+      <a href="about.html">عنّا</a><span class="sep">|</span>
+      <a href="privacy.html">سياسة الخصوصية</a><span class="sep">|</span>
+      <a href="terms.html">الشروط</a><span class="sep">|</span>
+      <a href="cookies.html">الكوكيز</a><span class="sep">|</span>
+      <a href="contact.html">تواصل معنا</a>
+      <br /><br />
+      <small style="color:#6b7280">
+          © <script>document.write(new Date().getFullYear())</script> Artype.fun - جميع الحقوق محفوظة.
+      </small>
+    </footer>
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
