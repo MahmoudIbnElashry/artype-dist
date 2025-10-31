@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://artype.fun/</loc></url>
-  <url><loc>https://artype.fun/about.html</loc></url>
-  <url><loc>https://artype.fun/privacy.html</loc></url>
-  <url><loc>https://artype.fun/contact.html</loc></url>
-  <url><loc>https://artype.fun/terms.html</loc></url>
+  <url>
+    <loc>https://artype.fun/</loc>
+    <lastmod>2025-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://artype.fun/about</loc>
+    <lastmod>2025-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://artype.fun/privacy</loc>
+    <lastmod>2025-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://artype.fun/contact</loc>
+    <lastmod>2025-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://artype.fun/terms</loc>
+    <lastmod>2025-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://artype.fun/cookies</loc>
+    <lastmod>2025-10-31</lastmod>
+  </url>
 </urlset>
